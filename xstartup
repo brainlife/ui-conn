@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#should I do this on startvnc?
+vglclient &
+
+#XFCE_PANEL_MIGRATE_DEFAULT=true startxfce4 &
+startlxde &
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/mcr/v92/runtime/glnxa64:/opt/mcr/v92/bin/glnxa64:/opt/mcr/v92/sys/os/glnxa64:/opt/mcr/v92/sys/opengl/lib/glnxa64 vglrun /conn_standalone/R2017a/conn
+
+#I get some error message about session not started or such.
+#pid=$!
+#sleep 10
+#id=`wmctrl -pl | grep " $pid " | cut -f 1 -d " "`
+#echo $id > /id.txt
+#wmctrl -i -r $id -b add,fullscreen
+
