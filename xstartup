@@ -6,7 +6,7 @@ vglclient &
 #XFCE_PANEL_MIGRATE_DEFAULT=true startxfce4 &
 startlxde &
 
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/mcr/v92/runtime/glnxa64:/opt/mcr/v92/bin/glnxa64:/opt/mcr/v92/sys/os/glnxa64:/opt/mcr/v92/sys/opengl/lib/glnxa64 vglrun /conn_standalone/R2017a/conn
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/mcr/v92/runtime/glnxa64:/opt/mcr/v92/bin/glnxa64:/opt/mcr/v92/sys/os/glnxa64:/opt/mcr/v92/sys/opengl/lib/glnxa64 vglrun /conn_standalone/R2017a/conn /input/output.mat
 
 #I get some error message about session not started or such.
 #pid=$!
